@@ -24,12 +24,14 @@ a {
 .root-container {
   display: flex;
   justify-content: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
-.home-container {
-  display: flex;
+// .home-container {
+//   display: flex;
 
-  @media (max-width: 750px) {
-    display: block;
-  }
-}
+//   @media (max-width: 750px) {
+//     display: block;
+//   }
+// }
