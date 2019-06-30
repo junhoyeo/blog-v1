@@ -1,31 +1,22 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
 }
 
 html {
+  height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 body {
+  min-height: 100vh;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
 }
 
 a {
   color: unset;
   text-decoration: none;
-  transition: all 0.8s;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.root_container {
-  display: flex;
-  justify-content: center;
+  transition: all 0.4s;
 }

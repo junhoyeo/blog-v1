@@ -1,0 +1,40 @@
+.posts-container {
+  display: flex;
+  justify-content: center;
+}
+
+.posts {
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  list-style: none;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.post-item {
+  padding: 0.5em;
+
+  &__title h1 {
+    margin: 0;
+  }
+
+  &__title:hover {
+    color: #364fc7;
+    transition: all 0.5s;    
+  }
+
+  &__excerpt {
+    margin: 0;
+  }
+}
+
+.post-item:not(:last-child) {
+  border-bottom: 1px solid $gray-4;
+}
+
+.post-item:hover {
+  background-color: $gray-0;
+}
