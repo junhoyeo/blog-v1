@@ -21,11 +21,6 @@
     margin: 0;
   }
 
-  &__title:hover {
-    color: #364fc7;
-    transition: all 0.5s;    
-  }
-
   &__excerpt {
     margin: 0;
   }
@@ -37,4 +32,9 @@
 
 .post-item:hover {
   background-color: $gray-0;
+}
+
+.post-item:hover > .post-item__title {
+  color: $blue-6;
+  transition: all 0.5s;    
 }

@@ -40,6 +40,10 @@
     font-size: 1em;
   }
 
+  &__tag {
+    color: $blue-6;
+  }
+
   &__social {
     margin-top: 1rem;
     display: flex;
@@ -68,7 +72,7 @@
     }
 
     &__name {
-      margin-top: 0.3rem;
+      margin-top: 1rem;
     }
   }
 }
