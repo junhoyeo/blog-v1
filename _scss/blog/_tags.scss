@@ -1,10 +1,6 @@
 .tags-container {
   flex-shrink: 0;
   width: 10rem;
-
-  @media (max-width: 750px) {
-    display: none; // 귀찮으니까 일단 없앰.
-  }
 }
 
 .tags {
