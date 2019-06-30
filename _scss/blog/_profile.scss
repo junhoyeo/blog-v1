@@ -52,11 +52,12 @@
   &__social .icon {
     color: $gray-7;
     font-size: 2.5rem;
+    transition: all 0.4s;
   }
 
   &__social .icon:hover,
   &__social .icon:active {
-    color: $gray-8;
+    color: $blue-6;
   }
 
   &__social a+a {

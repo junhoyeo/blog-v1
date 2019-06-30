@@ -1,0 +1,24 @@
+.error {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+
+  &__code {
+    margin: 0;
+    margin-top: 0.8em;
+    font-size: 4.5em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  &__message {
+    margin: 0;
+    margin-top: 0.5em;
+    font-size: 1em;
+  }
+}
