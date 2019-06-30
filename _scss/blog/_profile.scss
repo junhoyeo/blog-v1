@@ -55,8 +55,11 @@
 
   @media (max-width: 550px) {
     flex-direction: column;
-    -ms-flex-align: center;
     align-items: center;
+
+    &__info {
+      margin-left: 0;
+    }
 
     &__name {
       margin-top: 0;
