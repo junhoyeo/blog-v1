@@ -5,6 +5,11 @@ html, body {
   width: 100%;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 body {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
 }
@@ -12,6 +17,12 @@ body {
 a {
   color: unset;
   text-decoration: none;
+  transition: all 0.8s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .root_container {

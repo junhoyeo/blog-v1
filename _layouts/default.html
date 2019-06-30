@@ -9,16 +9,18 @@
       "/assets/main.css" | relative_url
     }}">
 
-    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <title>{{ page.title }}</title>
   </head>
   <body>
-    {% include navbar.html %}
+    {% include title.html %}
 
     <main class="root_container">
       {{ content }}
     </main>
+
+    {% include navbar.html %}
 
     {% include footer.html %}
   </body>
