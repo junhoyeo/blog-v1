@@ -1,12 +1,12 @@
 .posts-container {
   flex: 1 1;
+  width: 100%;
 }
 
 .posts {
   margin: 0;
   padding: 0;
-  padding-left: 1em;
-  padding-right: 1em;
+  width: 100%;
   list-style: none;
   margin-top: 2rem;
   margin-bottom: 4rem;
@@ -15,12 +15,27 @@
 .post-item {
   padding: 0.5em;
 
+  &__meta {
+    display: flex;
+    align-items: center;
+  }
+
+  &__profile {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 0.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
   &__title h1 {
     margin: 0;
+    font-size: 2.2em;
   }
 
   &__excerpt {
     margin: 0;
+    font-size: 1.2em;
   }
 }
 
