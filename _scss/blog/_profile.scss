@@ -1,0 +1,55 @@
+.profile {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &__thumbnail {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__info {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  &__name {
+    margin: 0;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+  }
+
+  &__intro {
+    margin: 0;
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+
+  &__social {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  &__social .icon {
+    color: #495057;
+    font-size: 2.5rem;
+  }
+
+  &__social a+a {
+    margin-left: 0.5em;
+  }
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+
+    &__name {
+      margin-top: 0;
+    }
+  }
+}

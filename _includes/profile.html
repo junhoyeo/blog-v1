@@ -1,0 +1,20 @@
+<div class="profile">
+  <img class="profile__thumbnail" src="https://github.com/{{ site.owner.github }}.png" />
+  <div class="profile__info">
+    <h1 class="profile__name">{{ site.owner.name }} <i class="fas fa-coffee"></i></h1>
+    <p class="profile__intro">
+      {% for line in site.owner.intro %}
+        {{ line }}<br />
+      {% endfor %}
+    </p>
+
+    <div class="profile__social">
+      <a href="https://github.com/{{ site.owner.github }}">
+        <i class="icon fab fa-github-square"></i>
+      </a>
+      <a href="https://facebook.com/{{ site.owner.facebook }}">
+        <i class="icon fab fa-facebook-square"></i>
+      </a>
+    </div>
+  </div>
+</div>
