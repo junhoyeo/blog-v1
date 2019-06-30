@@ -27,11 +27,20 @@
     width: 100px;
     padding-bottom: 0.8rem;
     justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   &__menu-item.active {
     color: $blue-6;
     font-weight: 500;
     border-bottom: 5px solid $blue-6;
+  }
+
+  @media (max-width: 600px) {
+    &__menu-item {
+      padding-left: 0.3rem;
+      padding-right: 0.3rem;
+    }
   }
 }
