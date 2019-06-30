@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100%;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
 }
 
@@ -19,4 +19,17 @@ a {
   color: unset;
   text-decoration: none;
   transition: all 0.4s;
+}
+
+.root-container {
+  display: flex;
+  justify-content: center;
+}
+
+.home-container {
+  display: flex;
+
+  @media (max-width: 750px) {
+    display: block;
+  }
 }

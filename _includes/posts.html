@@ -20,7 +20,7 @@
         >
           <h1>{{ post.title }}</h1>
         </a>
-        <p class="post-item__excerpt">{{ post.excerpt | strip_html }}</p>
+        <p class="post-item__excerpt">{{ post.excerpt | strip_html | truncate: 50 }}</p>
       </li>
     {% endfor %}
   </ul>
