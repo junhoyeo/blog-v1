@@ -2,7 +2,11 @@
   <div class="profile">
     <img class="profile__thumbnail" src="https://github.com/{{ site.owner.github }}.png" />
     <div class="profile__info">
-      <h1 class="profile__name">{{ site.owner.name }} <i class="fas fa-coffee"></i></h1>
+      <h1 class="profile__name">
+        <span class="letters">
+          {{ site.owner.name }}
+        </span> <i class="fas fa-coffee"></i>
+      </h1>
       <p class="profile__intro">
         {% for line in site.owner.intro %}
           {{ line }}<br />
@@ -21,3 +25,13 @@
     </div>
   </div>
 </div>
+
+<style>
+.profile__name .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+
+<script src="{{ base.url | prepend: site.url }}/assets/scripts/animateProfile.js"></script>
