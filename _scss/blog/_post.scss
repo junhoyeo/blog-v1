@@ -16,6 +16,16 @@
     border-radius: 50%;
   }
 
+  &__title, &__content {
+    font-family: 'Nanum Myeongjo', serif;    
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+
   &__content {
     a {
       color: $blue-6;
@@ -24,6 +34,11 @@
     a:hover,
     a:active {
       text-decoration: underline;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 1.2rem;
     }
   }
 }
