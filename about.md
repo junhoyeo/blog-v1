@@ -5,3 +5,5 @@ layout: about
 🎓 한국디지털미디어고등학교 18기 해킹방어과에 재학 중입니다.
 
 - 디미고 입학 이래로 계속 GitHub에 커밋하고 있어요!
+
+{% include constrn.html %}
