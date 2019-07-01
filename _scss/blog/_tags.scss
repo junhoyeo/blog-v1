@@ -41,4 +41,16 @@
     color: $gray-7;
     font-weight: 400;
   }
+
+  @media (max-width: 600px) {
+    &__list {
+      display: inline-flex;
+    }
+
+    &__tag {
+      display: inline-flex;
+      margin-right: 0.8rem;
+      font-size: 0.8rem;
+    }
+  }
 }
