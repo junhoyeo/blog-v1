@@ -2,10 +2,7 @@ $('.profile__name .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
 
-anime.timeline({
-  easing: 'easeOutExpo',
-  duration: 750
-})
+anime.timeline()
   .add({
     targets: '.profile__name .letter',
     scale: [0, 1],
