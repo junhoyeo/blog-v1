@@ -1,6 +1,7 @@
 .post {
   flex: 1 1;
   width: 100%;
+  margin-bottom: 4rem;
 
   &__meta {
     display: flex;
@@ -13,5 +14,16 @@
     margin-left: 0.5rem;
     object-fit: cover;
     border-radius: 50%;
+  }
+
+  &__content {
+    a {
+      color: $blue-6;
+    }
+
+    a:hover,
+    a:active {
+      text-decoration: underline;
+    }
   }
 }
