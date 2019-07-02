@@ -2,7 +2,7 @@
 title: 디미고인
 summary: 한국디지털미디어고등학교 인트라넷
 github: https://github.com/dimigoin/dimigoin-front
-image: https://github.com/dimigoin/dimigoin-front/blob/master/static/icons/og-image.png?raw=true
+image: /assets/images/dimigoin.png
 cover: true
 ---
 

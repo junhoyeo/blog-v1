@@ -18,6 +18,7 @@ owner:
     - 함께 일하기 좋은, 트렌디한 개발자가 되고 싶습니다.
   github: junhoyeo
   facebook: juno3704
+  profile: /assets/images/profile.png
 
 markdown: kramdown
 plugins:
