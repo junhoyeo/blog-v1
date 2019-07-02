@@ -1,3 +1,32 @@
 ---
-layout: projects
+layout: default
+permalink: projects
 ---
+
+<div class="projects">
+  {% for project in site.projects %}
+  <div class="project">
+    <div class="project__meta">
+      <span class="project__title">
+        {{ project.title }}
+      </span>
+      <span class="project__summary">
+        {{ project.summary }}
+      </span>
+    </div>
+    {% if project.cover %}
+      {% assign object_fit = 'cover' %}
+    {% else %}
+      {% assign object_fit = 'contain' %}
+    {% endif %}
+    <img
+      class="project__image"
+      src="{{ project.image }}"
+      style="object-fit: {{ object_fit }}"
+    >
+    <div class="project__content">
+      {{ project.content }}
+    </div>
+  </div>
+  {% endfor %}
+</div>

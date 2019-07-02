@@ -1,7 +1,6 @@
 <nav class="navbar">
   <ul class="navbar__menu">
     {% assign current = page.url | split: '.' %}
-
     <a 
       href="/"      
       class="navbar__menu-item {% if current.first == '/' %}active{% endif %}"

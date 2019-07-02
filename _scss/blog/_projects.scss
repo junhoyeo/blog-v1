@@ -3,4 +3,52 @@
   margin-bottom: 4rem;
   width: 100%;
   font-size: 1.2em;
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 2px 5px 32px -15px rgba(21, 19, 19, 0.2);
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #748ffc;
+    padding-left: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-top-right-radius: 10px;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  &__summary {
+    font-size: 1.1rem;
+  }
+
+  &__image {
+    background-color: $gray-1;
+    height: 10rem;
+    box-shadow: 0px -1px 32px -18px rgba(21, 19, 19, 0.2);
+    margin: 0.5rem;
+  }
+
+  &__content {
+    margin: 0;
+    padding-bottom: 0.7rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 1rem;
+
+    p {
+      margin: 0;
+    }
+  }
 }
