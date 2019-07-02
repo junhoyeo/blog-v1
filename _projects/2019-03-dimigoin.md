@@ -6,4 +6,4 @@ image: /assets/images/dimigoin.png
 cover: true
 ---
 
-하나에 별을 라이너 마디씩 듯합니다. 아름다운 풀이 많은 어머니 된 까닭입니다.
+한국디지털미디어고등학교 시스템 전산화 프로젝트, DIMIGOIN에서 프론트엔드 관리자를 맡고 있습니다.
