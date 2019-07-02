@@ -3,6 +3,10 @@ email: hanaro0704@gmail.com
 baseurl: ""
 url: "https://junhoyeo.github.io/"
 
+collections:
+  projects:
+  tags:
+
 sass:
   sass_dir: _scss
   style: compressed

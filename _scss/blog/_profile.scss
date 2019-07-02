@@ -41,7 +41,7 @@
   }
 
   &__tag {
-    color: $blue-6;
+    color: $brand;
   }
 
   &__social {
@@ -57,7 +57,7 @@
 
   &__social .icon:hover,
   &__social .icon:active {
-    color: $blue-6;
+    color: $brand;
   }
 
   &__social a+a {
