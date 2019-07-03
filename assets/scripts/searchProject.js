@@ -16,8 +16,10 @@ $(document).ready(function(){
         $(this).css('display', 'unset');
     });
 
-    if ($('.projects').length === 1) {
+    if ($(".projects a[style*='display: unset']").length === 0) {
       $('#contact').css('display', 'flex');
+    } else {
+      $('#contact').css('display', 'none');
     }
   });
 });
