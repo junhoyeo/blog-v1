@@ -3,32 +3,67 @@ layout: default
 permalink: projects
 ---
 
-<div class="projects">
-  {% for project in site.projects %}
-    <a href="{{ project.github }}" target="_blank">
-      <div class="project">
-        <div class="project__meta">
-          <span class="project__title">
-            {{ project.title }}
-          </span>
-          <span class="project__summary">
-            {{ project.summary }}
-          </span>
+<div class="content">
+  <div class="search">
+    <span class="search__desc">
+      여준호의 멋진 프로젝트들을 <strong>검색</strong>하세요
+    </span>
+    <div class="search__bar">
+      <i class="fas fa-search"></i>
+      <input
+        id="search"
+        class="search__input"
+        autofocus
+      />
+    </div>
+  </div>
+
+  <div class="projects">
+    {% for project in site.projects %}
+      <a href="{{ project.github }}" target="_blank">
+        <div class="project">
+          <div class="project__meta">
+            <span class="project__title">
+              {{ project.title }}
+            </span>
+            <span class="project__summary">
+              {{ project.summary }}
+            </span>
+          </div>
+          {% if project.cover %}
+            {% assign object_fit = 'cover' %}
+          {% else %}
+            {% assign object_fit = 'contain' %}
+          {% endif %}
+          <img
+            class="project__image"
+            src="{{ project.image }}"
+            style="object-fit: {{ object_fit }}"
+          >
+          <div class="project__content">
+            {{ project.content }}
+          </div>
         </div>
-        {% if project.cover %}
-          {% assign object_fit = 'cover' %}
-        {% else %}
-          {% assign object_fit = 'contain' %}
-        {% endif %}
-        <img
-          class="project__image"
-          src="{{ project.image }}"
-          style="object-fit: {{ object_fit }}"
-        >
-        <div class="project__content">
-          {{ project.content }}
-        </div>
-      </div>
-    </a>
-  {% endfor %}
+      </a>
+    {% endfor %}
+  </div>
 </div>
+
+<style>
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+  $('#search').on('keyup', function() {
+    const value = $(this).val().toLowerCase();
+    $(".projects div.project").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
