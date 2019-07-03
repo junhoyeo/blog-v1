@@ -20,8 +20,6 @@ $(document).ready(function(){
       $('#contact').css('display', 'flex');
     }
   });
-
-  $('#contact').css('display', 'none');
 });
 
 $('#search').placeholderTypewriter({
