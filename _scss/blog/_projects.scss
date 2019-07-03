@@ -19,7 +19,7 @@
   &__meta {
     display: flex;
     flex-direction: column;
-    border-left: 5px solid #748ffc;
+    border-left: 5px solid $gray-5;
     padding-left: 0.8rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -29,6 +29,7 @@
   &__title {
     font-size: 2rem;
     font-weight: 800;
+    color: $gray-5;
   }
 
   &__summary {
@@ -41,6 +42,7 @@
     height: 10rem;
     box-shadow: 0px -1px 32px -18px rgba(21, 19, 19, 0.2);
     margin: 0.5rem;
+    filter: opacity(60%) grayscale(100%);
   }
 
   &__content {
@@ -49,28 +51,49 @@
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     font-size: 1rem;
+    color: $gray-6;
 
     p {
       margin: 0;
     }
   }
+
+  $root: &;
+  
+  &:hover,
+  &:active {
+    transform: scale(1.05);
+    transition: all 0.3s;
+
+    #{$root}__meta {
+      border-left-width: 7px;
+      padding-left: 0.6rem;
+      border-left: 5px solid #748ffc;
+    }
+
+    #{$root}__title  {
+      color: #4c6ef5;
+      transition: all 0.3s;
+    }
+
+    #{$root}__image {
+      filter: none;
+      transition: all 0.3s;
+    }
+
+    #{$root}__summary {
+      color: $gray-7;
+      transition: all 0.3s;
+    }
+
+    #{$root}__content {
+      color: $gray-8;
+      transition: all 0.3s;
+    }
+  }
 }
 
-.project:hover {
-  transform: scale(1.05);
-  transition: all 0.3s;
-}
-
-.project:hover .project__meta {
-  border-left-width: 7px;
-  padding-left: 0.6rem;
-}
-
-.project:hover .project__title  {
-  color: #4c6ef5;
-  transition: all 0.3s;  
-}
-
-.project:hover .project__summary {
-  color: $gray-6;  
+a.hidden {
+  // visibility: hidden;
+  display: none;
 }
