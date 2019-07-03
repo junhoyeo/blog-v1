@@ -5,6 +5,10 @@ function updatePostposition(text){
 }
 
 $(document).ready(function(){
+  if( screen.width > 500 ) {
+    $('#search').focus();
+  }
+
   $('#search').on('keyup', function() {
     const value = $.trim($(this).val().toLowerCase());
     updatePostposition(value);
@@ -29,6 +33,6 @@ $('#search').placeholderTypewriter({
     '정보기술',
     '블록체인',
     '프론트엔드',
-    'IoT'
+    'IoT',
   ]
 })
