@@ -97,3 +97,31 @@ a.hidden {
   // visibility: hidden;
   display: none;
 }
+
+.no-result {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  align-items: center;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $gray-8;
+  }
+
+  &__contact {
+    cursor: pointer;
+    font-size: 1rem;
+    color: $brand;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.1s;
+    }
+  }
+
+  .fa-envelope-open {
+    margin-right: 0.2rem;
+  }
+}

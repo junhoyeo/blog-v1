@@ -15,7 +15,13 @@ $(document).ready(function(){
       else
         $(this).css('display', 'unset');
     });
+
+    if ($('.projects').length === 1) {
+      $('#contact').css('display', 'flex');
+    }
   });
+
+  $('#contact').css('display', 'none');
 });
 
 $('#search').placeholderTypewriter({
