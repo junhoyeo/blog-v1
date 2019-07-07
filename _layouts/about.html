@@ -3,39 +3,33 @@ layout: default
 ---
 
 <div class="about">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="stacks">
-          <h1 class="stacks__title">개발</h1>
-          <p class="stacks__desc">개발은 어쩌고.</p>
-          <div class="stacks__list">
-            {% for stack in site.data.stacks.development %}
-              <div class="stack">
-                <img
-                  class="stack__logo {% if stack.horiz %}horiz{% endif %}"
-                  src="/assets/images/stacks/development/{{ stack.src }}"
-                >
-              </div>
-            {% endfor %}
+  <div class="about__stacks">
+    <div class="stacks">
+      <h1 class="stacks__title">개발</h1>
+      <p class="stacks__desc">개발은 어쩌고.</p>
+      <div class="stacks__list">
+        {% for stack in site.data.stacks.development %}
+          <div class="stack">
+            <img
+              class="stack__logo {% if stack.horiz %}horiz{% endif %}"
+              src="/assets/images/stacks/development/{{ stack.src }}"
+            >
           </div>
-        </div>
+        {% endfor %}
       </div>
-      <div class="swiper-slide">
-        <div class="stacks">
-          <h1 class="stacks__title">데브옵스</h1>
-          <p class="stacks__desc">데브옵스는 저쩌고.</p>
-          <div class="stacks__list">
-            {% for stack in site.data.stacks.devops %}
-              <div class="stack">
-                <img
-                  class="stack__logo {% if stack.horiz %}horiz{% endif %}"
-                  src="/assets/images/stacks/devops/{{ stack.src }}"
-                >
-              </div>
-            {% endfor %}
+    </div>
+    <div class="stacks">
+      <h1 class="stacks__title">데브옵스</h1>
+      <p class="stacks__desc">데브옵스는 저쩌고.</p>
+      <div class="stacks__list">
+        {% for stack in site.data.stacks.devops %}
+          <div class="stack">
+            <img
+              class="stack__logo {% if stack.horiz %}horiz{% endif %}"
+              src="/assets/images/stacks/devops/{{ stack.src }}"
+            >
           </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -43,13 +37,3 @@ layout: default
     {{ content }}
   </div>
 </div>
-
-<script>
-var mySwiper = new Swiper ('.swiper-container', {
-  direction: 'vertical',
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
-})
-</script>

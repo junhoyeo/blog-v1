@@ -22,7 +22,12 @@
           href="{{ post.url }}#post"
           class="post-item__title"
         >
-          <h1>{{ post.title }}</h1>
+          <h1>
+            {{ post.title }}
+            {% if post.on_progress %}
+              <sup class="post-item__on-progress">작성 중</sup>
+            {% endif %}
+          </h1>
         </a>
         <p class="post-item__excerpt">{{ post.excerpt | strip_html | truncate: 50 }}</p>
       </li>
