@@ -20,6 +20,8 @@ owner:
   facebook: juno3704
   profile: /assets/images/profile.png
 
+g-analytics: UA-143434538-1
+
 markdown: kramdown
 plugins:
   - jekyll-feed
