@@ -11,6 +11,7 @@
 
 .project {
   cursor: pointer;
+  user-select: none;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -38,6 +39,7 @@
   }
 
   &__image {
+    -webkit-user-drag: none;
     background-color: $gray-1;
     height: 10rem;
     box-shadow: 0px -1px 32px -18px rgba(21, 19, 19, 0.2);

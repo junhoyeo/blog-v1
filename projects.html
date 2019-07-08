@@ -17,7 +17,7 @@ permalink: projects
   </div>
 
   <div class="projects">
-    {% for project in site.projects %}
+    {% for project in site.projects reversed %}
       <a href="{{ project.github }}" target="_blank">
         <div class="project">
           <div class="project__meta">
