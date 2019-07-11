@@ -1,3 +1,5 @@
 # junhoyeo.github.io
 
-## 도움
+![](img/posts.png)
+
+![](img/projects.png)
