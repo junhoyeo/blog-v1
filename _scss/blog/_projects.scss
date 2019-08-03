@@ -70,11 +70,11 @@
     #{$root}__meta {
       border-left-width: 7px;
       padding-left: 0.6rem;
-      border-left: 5px solid #748ffc;
+      border-left: 5px solid $brand-light;
     }
 
     #{$root}__title  {
-      color: #4c6ef5;
+      color: $brand;
       transition: all 0.3s;
     }
 

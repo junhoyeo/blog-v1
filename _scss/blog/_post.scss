@@ -29,7 +29,7 @@
 
   &__content {
     a {
-      color: $brand;
+      color: $brand-dark;
     }
 
     a:hover,
@@ -47,6 +47,10 @@
       padding-left: 0.8rem;
       border-left: 0.25em solid $gray-4;
       color: $gray-6;
+    }
+
+    img {
+      width: 100%;
     }
   }
 }

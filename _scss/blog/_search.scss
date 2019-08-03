@@ -6,7 +6,7 @@
   width: max-content;
 
   &__desc {
-    color: #4c6ef5;
+    color: $gray-7;
     font-size: 1.7rem;
     width: 100%;
     word-break: keep-all;
@@ -31,10 +31,10 @@
     box-sizing: border-box;
     border: none;
     outline: none;
-    caret-color: $brand;
+    caret-color: $gray-7;
     color: #343a40;
 
-    border-bottom: 2px solid $brand;
+    border-bottom: 2px solid $gray-7;
     text-align: center;
   }
 
