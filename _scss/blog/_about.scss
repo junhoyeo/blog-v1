@@ -6,10 +6,13 @@
   font-size: 1.2em;
 
   &__stacks {
-    margin-top: 0.2rem;
+    margin-top: 1rem;
   }
 
   &__content {
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+
     p {
       margin: 0;
     }
@@ -25,7 +28,7 @@
 .stacks {
   position: relative;
   padding-bottom: 0.01rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 
   &__title {
     margin: 0;
@@ -38,11 +41,30 @@
   }
 
   &__list {
-    display: grid;
-    grid-column-gap: 0.3rem;
-    grid-row-gap: 0.3rem;
-    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2.5rem;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  &__info-title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  &__info-desc {
+    margin: 0;
   }
 }
 
@@ -55,7 +77,8 @@
   justify-content: center;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 2px 5px 32px -15px rgba(21, 19, 19, 0.2);
+  box-shadow: 15px 15px 32px -18px rgba(21,19,19,.07);
+  margin-bottom: 0.5rem;
 
   &__logo {
     height: 3rem;

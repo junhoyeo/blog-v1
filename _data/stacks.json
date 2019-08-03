@@ -1,48 +1,83 @@
 {
   "development": [
     {
-      "src": "vue.png"
+      "src": "vue.png",
+      "title": "뷰를 바꾸는 뷰"
     },
     {
-      "src": "react.png"
+      "src": "react.png",
+      "title": "앱 만들어요"
     },
     {
-      "src": "flask.png"
+      "src": "flask.png",
+      "title": "백엔드 이걸로 시작함"
     },
     {
-      "src": "sanic.png"
+      "src": "sanic.png",
+      "title": "요즘은 비동기지"
     },
     {
       "src": "express.svg",
-      "horiz": true
+      "horiz": true,
+      "title": "잠깐 했었음"
     },
     {
-      "src": "mongodb.png"
+      "src": "mongodb.png",
+      "title": "몽고가 최고야"
     },
     {
-      "src": "arduino.png"
+      "src": "arduino.png",
+      "title": "건들 줄만 압니다"
     },
     {
       "src": "php.png",
-      "horiz": true
+      "horiz": true,
+      "title": "시키면.. 할게요;;"
     }
   ],
   "devops": [
     {
-      "src": "github.png"
+      "src": "github.png",
+      "title": "오늘도 커밋 중",
+      "desc": "그때부터였죠... 깃허브 때문에 코딩에 중독된 것 같아요."
     },
     {
-      "src": "eslint.svg"
+      "src": "eslint.svg",
+      "title": "에어비앤비에어비앤비에어비앤비",
+      "desc": "코드 스타일을 중요하게 생각합니다."
     },
     {
-      "src": "webpack.png"
+      "src": "webpack.png",
+      "title": "웹 팩",
+      "desc": "이름부터 번들러입니다."
     },
     {
       "src": "npm.png",
-      "horiz": true
+      "horiz": true,
+      "title": "이름이 곧 설명",
+      "desc": "보통의 경우 털실 말고 이걸 사용한답니다."
     },
     {
-      "src": "circleci.png"
+      "src": "circleci.png",
+      "title": "다크써클 씨아이",
+      "desc": "처음엔 이걸 셋업하느라 눈에 다크써클이 생겼어요."
+    }
+  ],
+  "collaboration": [
+    {
+      "src": "slack.png",
+      "title": "즐겁게 일하는 업무 분위기",
+      "desc": "놀 땐 놀면서도 할 땐 하자고요."
+    },
+    {
+      "src": "facebook.png",
+      "title": "연결된 세상과 소통하기",
+      "desc": "심심할 때 페이스북 타임라인을 살펴보는 습관이 생겼길래, 깃허브로 리디렉션시켜 두었습니다."
+    },
+    {
+      "src": "netflix.png",
+      "title": "함께 영화 보기",
+      "desc": "친구에게 빌린 계정으로 넷플릭스에서 영화나 드라마를 찾고 볼 수 있습니다."
     }
   ]
 }
