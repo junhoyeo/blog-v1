@@ -29,7 +29,7 @@
             {% endif %}
           </h1>
         </a>
-        <p class="post-item__excerpt">{{ post.excerpt | strip_html | truncate: 50 }}</p>
+        <p class="post-item__excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
       </li>
     {% endfor %}
   </ul>
