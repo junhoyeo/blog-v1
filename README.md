@@ -1,5 +1,14 @@
 # junhoyeo.github.io
 
-![](img/posts.png)
+## Posts
 
-![](img/projects.png)
+![posts page](img/post-list.png)
+
+## Projects
+
+![projects page](img/project-list.png)
+
+
+## About
+
+![about page](img/about.png)
