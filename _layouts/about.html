@@ -3,78 +3,20 @@ layout: default
 ---
 
 <div class="about">
-  <div class="about__content">
-    {{ content }}
+  <div class="about__help">
+    헉! 😲 제 포트폴리오가 필요하신가요? 아래 버튼을 눌러서 다운로드 받으세요!
   </div>
-  <div class="about__stacks">
-    <div class="stacks">
-      <h1 class="stacks__title">개발</h1>
-      <div class="stacks__list">
-        {% for stack in site.data.stacks.development %}
-          <div class="stacks__row">
-            <div class="stack">
-              <img
-                class="stack__logo {% if stack.horiz %}horiz{% endif %}"
-                src="/assets/images/stacks/development/{{ stack.src }}"
-              >
-            </div>
-            <div class="stacks__info">
-              <h1 class="stacks__info-title">
-                {{ stack.title }}
-              </h1>
-              <span class="stacks__info-desc">
-                {{ stack.desc }}
-              </span>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="stacks">
-      <h1 class="stacks__title">데브옵스</h1>
-      <div class="stacks__list">
-        {% for stack in site.data.stacks.devops %}
-          <div class="stacks__row">
-            <div class="stack">
-              <img
-                class="stack__logo {% if stack.horiz %}horiz{% endif %}"
-                src="/assets/images/stacks/devops/{{ stack.src }}"
-              >
-            </div>
-            <div class="stacks__info">
-              <h1 class="stacks__info-title">
-                {{ stack.title }}
-              </h1>
-              <span class="stacks__info-desc">
-                {{ stack.desc }}
-              </span>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="stacks">
-        <h1 class="stacks__title">협업</h1>
-        <div class="stacks__list">
-          {% for stack in site.data.stacks.collaboration %}
-            <div class="stacks__row">
-              <div class="stack">
-                <img
-                  class="stack__logo {% if stack.horiz %}horiz{% endif %}"
-                  src="/assets/images/stacks/collaboration/{{ stack.src }}"
-                >
-              </div>
-              <div class="stacks__info">
-                <h1 class="stacks__info-title">
-                  {{ stack.title }}
-                </h1>
-                <span class="stacks__info-desc">
-                  {{ stack.desc }}
-                </span>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-  </div>
+  <button
+    class="about__button"
+    onclick="onClickDownload()"
+  >
+    <i class="far fa-file-pdf fa-2x"></i> 포트폴리오 보기
+  </button>
 </div>
+
+<script>
+function onClickDownload() {
+  var win = window.open('{{ base.url | prepend: site.url }}/assets/resume.pdf', '_blank');
+  win.focus();
+}
+</script>
