@@ -8,7 +8,6 @@
 
 ![projects page](img/project-list.png)
 
-
 ## About
 
 ![about page](img/about.png)
