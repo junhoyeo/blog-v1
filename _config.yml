@@ -1,7 +1,7 @@
 title: junhoyeo
 email: hanaro0704@gmail.com
-baseurl: ""
-url: "https://junhoyeo.github.io/"
+url: https://junhoyeo.github.io
+baseurl: /blog
 
 collections:
   projects:
