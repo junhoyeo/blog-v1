@@ -35,7 +35,7 @@ permalink: projects
           {% endif %}
           <img
             class="project__image"
-            src="{{ project.image }}"
+            src="{{ project.image | prepend: site.baseurl }}"
             style="object-fit: {{ object_fit }}"
           >
           <div class="project__content">
@@ -71,4 +71,4 @@ permalink: projects
 }
 </style>
 
-<script src="{{ base.url | prepend: site.url }}/assets/scripts/searchProject.js"></script>
+<script src="{{ site.baseurl }}/assets/scripts/searchProject.js"></script>

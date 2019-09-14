@@ -2,19 +2,19 @@
   <ul class="navbar__menu">
     {% assign current = page.url | split: '.' %}
     <a 
-      href="/"      
+      href="{{ site.baseurl }}/"      
       class="navbar__menu-item {% if current.first == '/' %}active{% endif %}"
     >
       <li>글</li>
     </a>
     <a
-      href="/projects"
+      href="{{ site.baseurl }}/projects"
       class="navbar__menu-item {% if current.first == '/projects' %}active{% endif %}"
     >
       <li>프로젝트</li>
     </a>
     <a
-      href="/about"
+      href="{{ site.baseurl }}/about"
       class="navbar__menu-item {% if current.first == '/about' %}active{% endif %}"
     >
       <li>소개</li>

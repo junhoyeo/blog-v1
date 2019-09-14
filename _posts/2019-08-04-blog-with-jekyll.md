@@ -9,13 +9,13 @@ tag: jekyll
 # 그걸로 뭐 하게요?
 일단 블로그를 만드는 과정에서 많은 것을 배울 수 있을 것 같았습니다. 블로그가 필요하기도 했고요.
 
-![티스토리 로고](/assets/images/posts/20190804/tistory.png)
+![티스토리 로고](/blog/assets/images/posts/20190804/tistory.png)
 > 바로 그 티스토리
 
 중학교 2학년 때 말부터 [티스토리](https://www.tistory.com/)로 잠깐 블로그를 했던 적이 있었는데, 기능이나 디자인도 썩 마음에 들지 않았습니다. 무엇보다 마크다운을 사용할 수 없어서 불편했습니다. 그렇다고 웹 텍스트 에디터가 그보다 편하게 설계된 것도 아니였습니다. 다른 컨텐츠를 붙여 넣으면 서식까지 딸려와 게시글 스타일의 일관성이 없어지기도 했고, 게시글을 편집하고 관리하기도 불편했습니다. 그 대안으로 잠깐 joostory 님께서 개발하신 [tistory-editor](https://github.com/joostory/tistory-editor)를 사용하기도 했습니다.<br>
 추가: 이번 3월, 새로운 티스토리 에디터에 드디어 [마크다운 모드](https://notice.tistory.com/2478)가 생겼다고 합니다! <s>와! 그래도 전 제 블로그가 더 좋아요.</s>
 
-![TWIL 블로그](/assets/images/posts/20190804/twils.png)
+![TWIL 블로그](/blog/assets/images/posts/20190804/twils.png)
 > 일기장이 된 TWIL 블로그
 
 사실 이 블로그를 만들기 전에, 친구에게 소개를 받아 [TWIL](https://github.com/junhoyeo/my-twils)이라는 프로젝트를 진행한 적이 있었습니다. 
@@ -65,14 +65,14 @@ Ruby 기반이고, [Liquid](https://shopify.github.io/liquid/)라는 템플릿 �
 
 ## JQuery
 
-<img alt="jQuery 밈" src="/assets/images/posts/20190804/jquery.png" style="width:60% !important;">
+<img alt="jQuery 밈" src="/blog/assets/images/posts/20190804/jquery.png" style="width:60% !important;">
 > 이제는 놓아줄 때가 된 제이쿼리
 
 최대한 피하고 순수하게 자바스크립트로만 코딩하려고 노력했는데, 프로젝트 검색이나 anime.js 연동에는 어쩔 수 없이 조금 사용했습니다. 😰
 
 ## Google Analytics
 
-![구글 애널리틱스](/assets/images/posts/20190804/analytics.png)
+![구글 애널리틱스](/blog/assets/images/posts/20190804/analytics.png)
 > *Set up Google Analytics*
 
 사실 자세히는 안 봤지만, 블로그의 방문자 수나 자주 방문하는 페이지 등등 심심할 때 살펴보면 재미있어요! 아직은 블로그에 올린 글이 없었지만 나중에 다시 보면 달라져 있겠죠?

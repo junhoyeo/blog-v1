@@ -15,11 +15,11 @@
             <span class="post__author">
               {{ site.owner.name }}
             </span>
-            <img class="post__profile" src="{{ site.owner.profile }}" />
+            <img class="post__profile" src="{{ site.owner.profile | prepend: site.baseurl }}" />
           {% endif %}
         </span>
         <a
-          href="{{ post.url }}#post"
+          href="{{ post.url | prepend: site.baseurl }}#post"
           class="post-item__title"
         >
           <h1>
