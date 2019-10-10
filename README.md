@@ -1,13 +1,1 @@
-# junhoyeo.github.io
-
-## Posts
-
-![posts page](img/post-list.png)
-
-## Projects
-
-![projects page](img/project-list.png)
-
-## About
-
-![about page](img/about.png)
+# junhoyeo.github.io/blog [![jekyll](https://img.shields.io/badge/powered%20by-jekyll-red.svg)](https://jekyllrb.com/docs/)
