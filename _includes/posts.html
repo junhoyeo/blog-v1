@@ -10,7 +10,7 @@
             <span class="post__author">
               {{ post.author }}
             </span>
-            <img class="post__profile" src="https://github.com/{{ post.author.github }}.png" />
+            <img class="post__profile" src="{{ site.owner.profile | prepend: site.baseurl }}" />
           {% else %}
             <span class="post__author">
               {{ site.owner.name }}

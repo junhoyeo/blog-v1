@@ -32,9 +32,9 @@
   }
 
   &__menu-item.active {
-    color: $brand;
+    color: $brand-7;
     font-weight: 500;
-    border-bottom: 5px solid $brand;
+    border-bottom: 5px solid $brand-7;
   }
 
   @media (max-width: 600px) {

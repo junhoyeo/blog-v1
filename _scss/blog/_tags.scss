@@ -7,7 +7,7 @@
   margin-top: 2rem;
 
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   &__list {
@@ -17,19 +17,23 @@
     list-style: none;
   }
 
+  ul {
+    padding: 0;
+  }
+
   &__tag {
     cursor: pointer;
   }
 
   &__tag-name {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: $gray-6;
   }
 
   &__tag-num {
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: $gray-6;
   }
 
